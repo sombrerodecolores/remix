@@ -2393,7 +2393,7 @@ export default function CompaniesRoute() {
       sort === "ASC" ? "DESC" : "ASC"
     );
   }
-  const context: ContextType = { sort };
+  const context: ContextType = { sort: invoiceSort };
   const outlet = <Outlet context={context} />;
 
   const params = useParams();
